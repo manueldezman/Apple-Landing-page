@@ -1,0 +1,570 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Itim', cursive;
+   
+  }
+  html {
+    font-size: 62.5%;
+    background-color: rgb(242,242,242);
+  }
+  li {
+    display: inline;
+    margin-top: 0.7rem;
+    color: white;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 100rem) minmax(2rem, 1fr);
+    grid-template-rows: 5rem 40rem 45rem 42rem 30rem 5rem;
+    grid-gap: 5rem;
+    position: relative;
+  }
+  #header {
+  
+    grid-column: 1 / -1;
+    top: 0;
+    grid-row: 1 / 2;
+    position: sticky;
+  
+    z-index: 3;
+    background-color: rgb(0,0,0);
+    
+  
+  
+  }
+  .logo {
+    object-fit: contain;
+    height: 120%;
+    width: 6rem;
+    left: 0;
+    position: absolute;
+  
+  }
+  li:first-of-type {
+    margin-left: 15rem;
+  }
+  
+  #nav-bar {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    color: white; 
+  }
+  
+  
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: white;
+    
+  }
+  .signup-form {
+    grid-row: 2 / 3;
+    background: url(https://www.apple.com/v/iphone/home/bq/images/overview/retail/alt/why_apple__ezn1ktvka6oi_large.jpg);
+    grid-column: 2 / 3;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+  
+  }
+  .signup-form {
+    height: 100%;
+    width: 100%;
+  }
+  .sign-up-content {
+    width: 50rem;
+    height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  #form input {
+    min-height: 3rem;
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 1rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+  }
+  .submit {
+    margin-top: 0.5rem;
+    background-color: black;
+    color: white;
+  }
+  
+  .big {
+    font-size: 4rem;
+    font-family: 'Bungee', sans-serif;
+    display: block;
+    width: 100%;
+  }
+  .top-text {
+    font-family: 'Dancing Script', cursive;
+  }
+  .medium {
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  #latest-release {
+    grid-column: 2 / 3;
+  }
+  .latest-release {
+    background-color: rgba(0, 0, 0, 1);
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 100%;
+    border-radius: 6rem;
+  }
+  .latest-product {
+    grid-column: 1 / 2;
+    border-radius: 6rem;
+  }
+  
+  .latest-product {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  
+  }
+  .latest-product-image {
+    height: 80%;
+    width: 50%;
+    display: inline;
+  }
+  .latest-product-image figcaption{
+    margin-top: 0; 
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    text-align: center;
+    opacity: 0.95;
+  }
+  figure img{
+    margin-top: 6rem;
+    height: 70%;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0;
+  }
+  
+  .latest-product-video {
+   
+    grid-column: 2 / -1; 
+    border-radius: 6rem; 
+  }
+
+  #video {
+   margin-top: 2rem;
+  }
+  .latest-product-video h3{
+    
+   color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+    text-align: center;
+    opacity: 0.95;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    margin-left: -4rem;
+  }
+  #featured-products {
+     grid-column: 2 / 3;
+     margin-bottom: 0;
+  }
+  .featured-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+  .item {
+    width: 23.8rem;
+    height: 80%;
+
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .item:hover {
+    box-shadow: .4rem .4rem 1rem .5rem #969A9C;
+  }
+  .item > img {
+    order: -1;
+    height: 40%;
+    width: 80%;
+    object-fit: cover;
+    margin-top: 1rem;
+  }
+  
+  .item > button {
+    width: 50%;
+    height: 4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    margin-bottom: 1rem; 
+    font-size: 2rem;
+  }
+  
+  .item > h4 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .item > h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  .one {
+    order: -3; 
+  }
+  .two {
+    order: -2;
+  }
+  .three {
+    order: -1;
+  }
+  #reviews {
+    grid-column: 2 / 3;
+    margin-bottom: 0;
+  }
+  .reviews {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  .reviews article {
+    width: 32rem;
+    background-color: rgb(251,240,221);
+    height: 25rem;
+    border-radius: 4rem;
+    border: .2rem dashed black;
+  }
+  
+  .reviews article > p {
+    font-size: 1.8rem;
+    height: 16rem;
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  .reviews article > section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    ;
+  }
+  .reviews article > section > div > h3 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .reviews article > section > div > p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  .reviews article > section > img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 1rem;
+  }
+  footer {
+    grid-column: 1 / -1;
+    background-color: black;
+    color: white;
+  }
+  a {
+    text-decoration: none;
+    color: white;;
+    font-size: 2rem;
+  }
+  footer > nav {
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    height: 50%;
+    float: right;
+    margin-right: 1rem;
+    
+  
+  }
+  footer > nav > h3 {
+    display: inline;
+    font-size: 1.5rem;
+    
+  }
+  footer > p {
+    font-size: 1.4rem;
+    margin-left: 1rem;
+  }
+  .grid-container > h2 {
+    font-size: 4rem;
+    color: rgb(220, 0, 0);
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+  .diff {
+    font-size: 3rem;
+    margin-left: .5rem;
+    color: #827D7F;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 80vw 1fr;
+    grid-template-rows: 5rem 30rem 30rem 28rem min-content 5rem;
+    grid-gap: 2rem;
+    position: relative;
+    }
+    
+    .signup-form {
+      background-position: center bottom;
+      background-size:  cover;
+      border-radius: 2rem;
+    }
+    
+    .big {
+      font-size: 2.5rem;
+    }
+   .medium {
+    font-size: 2.2rem;
+  }
+  #form > input {
+    width: 25rem;
+  
+  }
+    
+  .grid-container > h2 {
+    font-size: 2.5rem;
+    color: rgb(220, 0, 0);
+    margin-bottom: .5rem;
+    margin-left: 2rem;
+    margin-top: 0;
+  }
+  .item {
+    width: 15rem;
+  }
+  .item > button {
+    height: 2rem;
+  }
+  
+  .diff {
+    font-size: 1.5rem;
+    margin-left: .5rem;
+    color: #827D7F;
+  }
+
+  .item > button {
+    width: 50%;
+    height: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: blue;
+    margin-bottom: 0.5rem; 
+    font-size: 1.5rem;
+  }
+  
+  .item > h4 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+  .item > h3 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .latest-release {
+    grid-template-columns: 35% 75%;
+  }
+  .latest-product-image figcaption {
+    font-size: 1.5rem;
+    margin-top: -4rem;
+    margin-left: 4rem;
+    }
+  #video {
+    margin-top: 2rem;
+    width: 65%;
+    height: 60%;
+    margin-left: 5rem;
+  }
+  .latest-product-video h3 {
+    font-size: 1.8rem;
+    margin-left: -8rem;
+  }
+  
+  .reviews article {
+    width: 21.4rem;
+    background-color: rgb(251,240,221);
+    height: 20rem;
+    border-radius: 2rem;
+    border: .1rem dashed black;
+  }
+  
+  .reviews article > p {
+    font-size: 1.4rem;
+    height: 12rem;
+    width: 20rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+  .reviews article > section {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .reviews article > section > div > h3 {
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .reviews article > section > div > p {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  .reviews article > section > img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 1rem;
+  }
+  .item > img {
+    height: 15rem;
+    object-fit: contain;
+  }
+  .latest-product-image > figure > img {
+    height: 15rem;
+    margin-bottom: 1rem;
+    width: 8rem;
+  }
+  .nav-link {
+    font-size: 1.8rem;
+  }
+  }
+  
+  @media only screen and (max-width: 650px) {
+    
+    .container {
+    display: grid;
+    grid-template-columns: 1fr 80vw 1fr;
+    grid-template-rows: 5rem 20rem 30rem 28rem min-content 5rem;
+    grid-gap: 2.5rem;
+    position: relative;
+    }
+  
+    .reviews {
+      flex-wrap: wrap;
+      gap: 1rem;
+      
+    }
+    .signup-form {
+      background-size: contain;
+      height: 22rem;
+      margin-bottom: 0;
+    }
+  
+     #form > input {
+      width: 18rem;
+    }
+    .medium {
+      font-size: 1.5rem;
+    }
+    .big {
+      font-size: 2rem;
+    }
+    .nav-link {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+    .latest-release {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+  
+    }
+    .latest-product {
+      height: 15rem;
+  
+    }
+    .latest-product-video > #video{
+      margin-top: -2.8rem;
+      height: 12rem;
+      margin-right: auto;
+      margin-left: 6.5rem;
+    }
+    .latest-product-video > h3 {
+      margin-left: 0;
+      margin-top: -.5rem;
+      margin-bottom: 3rem;
+      font-size: 1.5rem;
+    }
+    .latest-product-video  {
+    height: 15rem;
+    }
+    .latest-product-image {
+    margin-top: -7.6rem;
+  }
+    .latest-product-image > figcaption {
+      margin-left: 0;
+  }
+    .item > img {
+      height: 10rem;
+      object-fit: contain;
+    } 
+    .reviews article > section > div > p {
+    font-size: 1rem;
+    margin-top: 0;
+  }
+    .reviews article:last-of-type::after {
+      content: " ";
+      width: 24rem;
+    }
+    .reviews article {
+    width: 18.4rem;
+    background-color: rgb(251,240,221);
+    height: 16rem;
+    border-radius: 2rem;
+    border: .1rem dashed black;
+  }
+  .reviews section {
+    margin-bottom: 0;
+  }
+  .reviews article > section > img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .reviews article > p {
+    font-size: 1.1rem;
+    height: 8rem;
+    width: 16rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+  footer > p {
+    font-size: 1rem;
+  }
+  footer > nav > h3 {
+    font-size: 1.2rem;
+  }
+  }
