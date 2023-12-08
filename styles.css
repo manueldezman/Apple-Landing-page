@@ -75,7 +75,7 @@
     width: 100%;
   }
   .sign-up-content {
-    width: 50rem;
+    width: 40rem;
     height: 25rem;
     margin-left: auto;
     margin-right: auto;
@@ -567,4 +567,16 @@
   footer > nav > h3 {
     font-size: 1.2rem;
   }
+  }
+  @media only screen and (max-width: 450px) {
+    .signup-form {
+
+    }
+    .container {
+      grid-template-columns: 1fr 380px 1fr;
+    }
+    #form input {
+      width: 15rem;
+      font-size: 1rem;
+    }
   }
